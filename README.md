@@ -15,5 +15,5 @@ A discord bot that sets a category of voice channels that are updated frequently
       <li>ETH_ChannelChangeID</li>
     </ul>
   </li>
-  <li>`npm start` will be the command to start the bot </li>
+  <li><code>npm start</code> will be the command to start the bot </li>
 </ul>
