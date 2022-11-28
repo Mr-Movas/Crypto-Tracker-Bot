@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "coingecko-api": "^1.0.10",
+    "discord.js": "^14.6.0",
+    "dotenv": "^16.0.3",
+    "init": "^0.1.2",
+    "mysql2": "^2.3.3"
+  },
+  "name": "crypto-tracker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./app/index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
