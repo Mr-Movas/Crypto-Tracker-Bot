@@ -1,5 +1,5 @@
-const config = require('../../config.js')
-const log = require('../../logs/log.js')
+const config = require('../config.js')
+const log = require('../logs/log.js')
 
 module.exports = async () => {
     let btcData = await config.cryptoClient.coins.fetch('bitcoin', {})

@@ -1,7 +1,7 @@
-const config = require('../config.js')
-const database = require('../database/database.js')
-const log = require('../logs/log.js')
-const refreshCActivity = require('./function/refreshActivity.js')
+const config = require('../../config.js')
+const database = require('../../database/database.js')
+const log = require('../../logs/log.js')
+const refreshCActivity = require('../../functions/refreshActivity.js')
 
 //DELAY FUNCTION
 async function delay(ms) {

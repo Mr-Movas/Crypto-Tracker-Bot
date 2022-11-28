@@ -1,5 +1,10 @@
-const guildCreate = require('../events/guildCreate.js')
+const database = require('../database/database.js')
+const log = require('../logs/log.js')
 
-module.exports = (client) => {
-    client.on('guildCreate', guildCreate)
+module.exports = (guild) => {
+    //LOG THE GUILD
+    log('info', `Joined a new guild ${guild.name} (${guild.id})`)
+    
+    //ADD THE GUILD TO THE DATABASE
+    database.addGuild(guild.id)
 }

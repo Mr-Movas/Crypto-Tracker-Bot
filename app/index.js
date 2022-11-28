@@ -12,7 +12,9 @@ console.log('\x1b[32mLoading listeners...\x1b[0m')
 let listeners = fs.readdirSync('./app/listeners').filter(file => file.endsWith('.js'));
 for(let listener of listeners) {
     let listenerFile = require(`./listeners/${listener}`)
-    listenerFile(config.client)
+
+    config.client.on(listener.split('.')[0], listenerFile)
+
     console.log(`\x1b[33mLoaded listener:\x1b[37m ${listener}\x1b[0m`)
 }
 
